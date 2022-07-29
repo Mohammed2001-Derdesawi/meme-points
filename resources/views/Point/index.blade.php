@@ -39,12 +39,12 @@
 
 
 
-            <div class="col-md-6">
-                <div>
-                    <h3 style="margin-top:40px; ">
+            <div class="col-md-8">
+                <div style="background-color: #51deee">
+                    <h3 style="margin-bottom:30px; text-align: start; font-size: 1.50rem !important;">
 
                             يمكنك زيارة موقعنا والاطلاع على دوراتنا في الرخصة المهنية
-                            <a  style="color: rgba(0, 89, 222, 0.797)" href="https://meem-sa.com/">اضغط هنا</a>
+                            <a  style="color: rgba(250, 5, 5, 0.797)" href="https://meem-sa.com/">اضغط هنا</a>
 
 
 
