@@ -26,19 +26,39 @@
         <div class="container py-3">
 
         <div class="row justify-content-center">
-            <div class="col-md-12 ">
-                <div style="display: flex;justify-content: end">
-                    <img style="width: 20%" src="{{asset('Images/logo.png')}}" alt="منصة ميم التعليمية ">
+            <div class="col-md-12  "  style="display: flex;justify-content:center">
+
+
+                <div style="display: flex;justify-content:space-around">
+                    <div>
+                        <h3 style="margin-top:40px; ">
+
+                                يمكنك زيارة موقعنا والاطلاع على دوراتنا في الرخصة المهنية
+                                <a  style="color: rgba(0, 89, 222, 0.797)" href="https://meem-sa.com/">اضغط هنا</a>
+
+
+
+
+                        </h3>
+
+                    </div>
+                        <img style="width: 20%" src="{{asset('Images/logo.png')}}" alt="منصة ميم التعليمية ">
+
+
+
+                 </div>
+
 
                 </div>
 
-            </div>
+
+
             <div class="col-md-6">
               <span class="anchor" id="formLogin"></span>
 	<!-- form card login -->
     <div class="card card-outline-secondary">
         <div class="card-header">
-          <h3 class="mb-0">احسب نقاطك</h3>
+          <h3 class="mb-0" style="text-align: center;">احسب نقاطك</h3>
         </div>
         <div class="card-body">
           <form  class="form"  role="form" action="{{route('points.create')}}" method="post">
@@ -136,6 +156,14 @@
                             <option value="20">20</option>
                             <option value="21">21</option>
                             <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
 
                         </select>
                         <span class="text-danger">{{$errors->first("day")}}</span>
@@ -163,7 +191,7 @@
         <div class="col-md-6 ">
             <div class="card card-outline-secondary">
                 <div class="card-header">
-                  <h3 class="mb-0">تفاصيل النقاط</h3>
+                  <h3 class="mb-0" style="text-align: center;">تفاصيل النقاط</h3>
                 </div>
                 <div class="card-body">
                     <div class="row" style="display: flex;justify-content:space-between">
