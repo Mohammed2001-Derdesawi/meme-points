@@ -26,7 +26,7 @@
         <div class="container py-3">
 
         <div class="row justify-content-center">
-            <div class="col-md-12  "  style="display: flex;justify-content:center">
+            <div class="col-md-12"  style="display: flex;justify-content:center">
 
 
                 <div style="display: flex;justify-content:end">
@@ -41,10 +41,10 @@
 
             <div class="col-md-8">
                 <div style="background-color: #51deee">
-                    <h3 style="margin-bottom:30px; text-align: start; font-size: 1.50rem !important;">
+                    <h3 style="margin-bottom:30px; text-align: start; font-size: 1.80rem !important;">
 
                             يمكنك زيارة موقعنا والاطلاع على دوراتنا في الرخصة المهنية
-                            <a  style="color: rgba(250, 5, 5, 0.797)" href="https://meem-sa.com/">اضغط هنا</a>
+                            <p style="text-align: center;padding: 5px"> <a  style="color: rgba(250, 5, 5, 0.797)" href="https://meem-sa.com/">اضغط هنا</a></p>
 
 
 
@@ -62,7 +62,7 @@
           <form  class="form"  role="form" action="{{route('points.create')}}" method="post">
             @csrf
             <div class="form-group">
-              <label for="uname1">المعدل التراكمي</label>
+              <label>المعدل التراكمي</label>
               <div class="row">
                 <div class="col-md-6">
                     <input class="form-control" name="average" required type="text" value="{{old('average')}}">
