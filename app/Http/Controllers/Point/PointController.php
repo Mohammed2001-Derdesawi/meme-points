@@ -17,11 +17,11 @@ class PointController extends Controller
 
     public function calculate(PointRequest $request)
     {
+
         $average=$this->calcuateAverage($request->average_rate,$request->average);
         $specialization_mark=$request->specialization_mark * 0.4;
         $general_exam=$request->general_exam * 0.2;
-        $date_end=Carbon::createFromDate(1444,1,9)->format('d-m-Y');
-
+        $date_end=Carbon::createFromDate(1444,1,9);
 
         $years=Carbon::createFromDate($request->year,$request->month,$request->day)->diffInYears($date_end);
         $seniority=1;
@@ -32,8 +32,8 @@ class PointController extends Controller
         }
         else
         {
-            $days=Carbon::createFromDate($request->year,$request->month,$request->day)->diffInDays($date_end);
-            $seniority=($days/(10*360)) *100;
+            $days=Carbon::createFromDate($request->year,$request->month,$request->day,'GMT')->diffInDays($date_end);
+            $seniority=(($days)/(10*360)) *100;
             $seniority*=0.2;
 
 
@@ -54,6 +54,7 @@ class PointController extends Controller
 
 
     }
+
     public function calcuateAverage($average_rate,$average)
     {
         switch ($average_rate)
@@ -102,6 +103,8 @@ class PointController extends Controller
         return $average;
 
     }
+
+
 
 
 }
