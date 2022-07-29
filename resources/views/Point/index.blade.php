@@ -29,23 +29,9 @@
             <div class="col-md-12  "  style="display: flex;justify-content:center">
 
 
-                <div style="display: flex;justify-content:space-around">
-                    <div>
-                        <h3 style="margin-top:40px; ">
+                <div style="display: flex;justify-content:end">
 
-                                يمكنك زيارة موقعنا والاطلاع على دوراتنا في الرخصة المهنية
-                                <a  style="color: rgba(0, 89, 222, 0.797)" href="https://meem-sa.com/">اضغط هنا</a>
-
-
-
-
-                        </h3>
-
-                    </div>
                         <img style="width: 20%" src="{{asset('Images/logo.png')}}" alt="منصة ميم التعليمية ">
-
-
-
                  </div>
 
 
@@ -54,6 +40,18 @@
 
 
             <div class="col-md-6">
+                <div>
+                    <h3 style="margin-top:40px; ">
+
+                            يمكنك زيارة موقعنا والاطلاع على دوراتنا في الرخصة المهنية
+                            <a  style="color: rgba(0, 89, 222, 0.797)" href="https://meem-sa.com/">اضغط هنا</a>
+
+
+
+
+                    </h3>
+
+                </div>
               <span class="anchor" id="formLogin"></span>
 	<!-- form card login -->
     <div class="card card-outline-secondary">
