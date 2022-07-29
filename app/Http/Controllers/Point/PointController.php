@@ -24,7 +24,22 @@ class PointController extends Controller
 
 
         $years=Carbon::createFromDate($request->year,$request->month,$request->day)->diffInYears($date_end);
-        $seniority=$years<=10? $years*2 : 20;
+        $seniority=1;
+        if($years >=10)
+        {
+            $seniority=10*2;
+
+        }
+        else
+        {
+            $days=Carbon::createFromDate($request->year,$request->month,$request->day)->diffInDays($date_end);
+            $seniority=($days/(10*360)) *100;
+            $seniority*=0.2;
+
+
+        }
+
+
 
         $total=$seniority+$general_exam+$specialization_mark+$average;
         $total=number_format((float)$total, 2, '.', '');
